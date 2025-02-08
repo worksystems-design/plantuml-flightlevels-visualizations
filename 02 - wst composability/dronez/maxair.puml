@@ -1,0 +1,18 @@
+@startuml
+
+!include https://raw.githubusercontent.com/worksystems-design/plantuml-flightlevels-lib/develop/defs/fl-wst.iuml
+
+[Max Air] <<FL2>>
+[max body] <<FL1>>
+[max sw 1] <<FL1>>
+[max sw 2] <<FL1>>
+[max assemb.] <<FL1>>
+[max prop] <<FL1>>
+
+[max body] -up-> [Max Air]
+[max sw 1] -up-> [Max Air]
+[max sw 2] -up-> [Max Air]
+[max assemb.] -up-> [Max Air]
+[max prop] -up-> [Max Air]
+
+@enduml

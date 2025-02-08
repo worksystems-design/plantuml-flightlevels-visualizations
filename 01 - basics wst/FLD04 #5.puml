@@ -1,0 +1,38 @@
+@startuml FLD04 #5
+
+title Work Systems Topology using PlantUML
+
+!include https://raw.githubusercontent.com/worksystems-design/plantuml-flightlevels-lib/develop/defs/fl-wst.iuml
+
+package FL3 {
+  [Strategy] <<FL3>>
+}
+
+package FL2 {
+  [XFunctional] <<FL2>>
+
+  component "Product 1" <<FL2>> {
+    [Team 1] <<FL1>>
+  }
+  [Product 2] <<FL2>>
+}
+
+package FL1 {
+  [The Innovators] <<FL1>>
+  [Team 2] <<FL1>>
+  [Support & Services] <<FL1>>
+}
+
+[The Innovators] -up->> [Product 1] : contributes
+[The Innovators] -up->> [Strategy] : contributes
+[Team 2] -up->> [Product 1] : contributes
+[Team 2] -up->> [Product 2] : contributes
+[Support & Services] -up->> [XFunctional] : contributes
+[Product 1] --up->> [Strategy] : contributes
+[Product 2] --up->> [Strategy] : contributes
+[Product 1] <<-up->> [XFunctional]
+[Product 2] <<-up->> [XFunctional]
+
+remove <<FL3>>
+
+@enduml

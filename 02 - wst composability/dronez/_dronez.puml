@@ -1,0 +1,23 @@
+@startuml
+
+!define fllib https://raw.githubusercontent.com/worksystems-design/plantuml-flightlevels-lib/refs/heads/main/defs
+!include fllib/fl-wst.iuml
+!include fllib/fl-wst.iuml!wsd.branding
+
+' Internal Platforms
+!include software platform.puml
+!include propeller platform.puml
+
+' Product Work Systems
+!include maxair.puml
+!include 3p.puml
+!include 4p.puml 
+!include 5p.puml
+
+' Supply Chain functions
+!include assembly.puml
+
+' Operational Portfolio level
+!include operational portfolio.puml
+
+@enduml

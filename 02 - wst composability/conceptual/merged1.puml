@@ -1,0 +1,14 @@
+@startuml Product 1 and Product 2 merged
+
+' We add the styles here
+!define fllib https://raw.githubusercontent.com/worksystems-design/plantuml-flightlevels-lib/refs/heads/main/defs
+!include fllib/fl-wst.iuml
+!include fllib/fl-wst.iuml!wsd.branding
+
+' We include the two work systems
+!include ws1.puml
+!include ws2.puml
+
+title Product 1 and Product 2 merged
+
+@enduml

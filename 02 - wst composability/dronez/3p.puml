@@ -1,0 +1,15 @@
+@startuml
+!include https://raw.githubusercontent.com/worksystems-design/plantuml-flightlevels-lib/develop/defs/fl-wst.iuml
+
+[3P] <<FL2>>
+[3P PM] <<FL1>>
+[3P SW Team] <<FL1>>
+[3P Body Team] <<FL1>>
+[Prop Team 1] <<FL1>>
+
+[3P PM] -up-> [3P]
+[3P SW Team] -up-> [3P]
+[3P Body Team] -up-> [3P]
+[Prop Team 1] -up-> [3P]
+
+@enduml

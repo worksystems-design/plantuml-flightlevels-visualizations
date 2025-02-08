@@ -1,0 +1,15 @@
+@startuml FLD2024 #1
+
+title Work Systems Topology using PlantUML
+
+[The Innovators] -up->> [Product 1] : contributes
+[The Innovators] -up->> [Strategy] : contributes
+[Team 1] -up->> [Product 1] : contributes
+[Team 2] -up->> [Product 1] : contributes
+[Team 2] -up->> [Product 2] : contributes
+[Support & Services] -up->> [XFunctional] : contributes
+[Product 1] --up->> [Strategy] : contributes
+[Product 2] --up->> [Strategy] : contributes
+
+@enduml
+

@@ -1,0 +1,29 @@
+@startuml merged
+
+!define fllib https://raw.githubusercontent.com/worksystems-design/plantuml-flightlevels-lib/refs/heads/main/defs
+!include fllib/fl-wst.iuml
+!include fllib/fl-wst.iuml!wsd.branding
+
+!include ws1.puml
+
+' Here we're adding styles to show a delta
+<style>
+    componentDiagram {
+      arrow {
+        LineColor LimeGreen
+        LineThickness 4
+      }
+      .WS2 {
+        FontColor LimeGreen
+        FontStyle Bold
+      }
+    }
+</style>
+
+!include ws2.puml
+
+hide <<FL1>>
+
+title Products merged, FL2 and FL3 only
+
+@enduml

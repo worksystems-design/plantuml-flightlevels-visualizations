@@ -1,0 +1,34 @@
+@startuml
+
+!include https://raw.githubusercontent.com/worksystems-design/plantuml-flightlevels-lib/develop/defs/fl-wst.iuml
+
+[Operational Portfolio] <<FL2>>
+
+[HR] <<FL2>>
+[Customer Support] <<FL2>>
+[Procurement] <<FL2>>
+[Marketing] <<FL2>>
+[Sales] <<FL2>>
+[Financial Management] <<FL2>>
+[Legal] <<FL2>>
+[Assembly] <<FL2>>
+[Battery Platform] <<FL2>>
+
+[HR] -down-> [Operational Portfolio]
+[Customer Support] -down-> [Operational Portfolio]
+[Procurement] -down-> [Operational Portfolio]
+[Marketing] -down-> [Operational Portfolio]
+[Sales] -down-> [Operational Portfolio]
+[Financial Management] -down-> [Operational Portfolio]
+[Legal] -down-> [Operational Portfolio]
+[Assembly] -down-> [Operational Portfolio]
+[Battery Platform] -down-> [Operational Portfolio]
+
+[Max Air] -up-> [Operational Portfolio]
+[Software Platform] -up-> [Operational Portfolio]
+[5P] -up-> [Operational Portfolio]
+[3P] -up-> [Operational Portfolio]
+[4P] -up-> [Operational Portfolio]
+[Propeller Platform] -up-> [Operational Portfolio]
+
+@enduml

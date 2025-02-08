@@ -1,0 +1,14 @@
+@startuml
+
+!include https://raw.githubusercontent.com/worksystems-design/plantuml-flightlevels-lib/develop/defs/fl-wst.iuml
+
+[Assembly] <<FL2>>
+[assembly 1] <<FL1>>
+[assembly 2] <<FL1>>
+[assembly 3] <<FL1>>
+
+[assembly 1] --> [Assembly]
+[assembly 2] --> [Assembly]
+[assembly 3] --> [Assembly]
+
+@enduml

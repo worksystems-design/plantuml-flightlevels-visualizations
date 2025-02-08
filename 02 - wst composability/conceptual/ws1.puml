@@ -1,0 +1,22 @@
+@startuml Product 1
+
+title Work System - Product 1
+
+package FL3 <<FL3>> {
+  [Strategy] <<FL3>>
+}
+
+package FL2 <<FL2>> {
+  [Product 1] <<FL2>> <<WS1>>
+}
+
+package FL1 <<FL1>> {
+  [Team A] <<FL1>> <<WS1>>
+  [Team B] <<FL1>> <<WS1>>
+}
+
+[Product 1] -up-> [Strategy]
+[Team A] -up-> [Product 1]
+[Team B] -up-> [Product 1]
+
+@enduml

@@ -1,0 +1,36 @@
+@startuml FLD04 #3
+
+title Work Systems Topology using PlantUML
+
+!include defs/fl-wst.iuml
+
+package FL3 {
+  [Strategy] <<FL3>>
+}
+
+package FL2 {
+  [Product 1] <<FL2>>
+  [Product 2] <<FL2>>
+  [XFunctional] <<FL2>>
+}
+
+package FL1 {
+  [The Innovators] <<FL1>>
+  [Team 1] <<FL1>>
+  [Team 2] <<FL1>>
+  [Support & Services] <<FL1>>
+}
+
+[The Innovators] -up->> [Product 1] : contributes
+[The Innovators] -up->> [Strategy] : contributes
+[Team 1] -up->> [Product 1] : contributes
+[Team 2] -up->> [Product 1] : contributes
+[Team 2] -up->> [Product 2] : contributes
+[Support & Services] -up->> [XFunctional] : contributes
+[Product 1] --up->> [Strategy] : contributes
+[Product 2] --up->> [Strategy] : contributes
+
+!include defs/fl-wst.iuml!wst.legend
+!include defs/fl-wst.iuml!wsd.branding
+
+@enduml
